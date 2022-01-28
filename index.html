@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Pop Up</title>
+
+    <style>
+        #popup {
+            display: none;
+            position: absolute;
+            margin: 0 auto;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0px 0px 50px 2px #000;
+        }
+
+        .popup-btn{
+            position: absolute;
+            bottom: 5%;
+            left: 50%;
+            transform: translatex(-50%);
+        }
+
+        .btn-primary{ 
+           
+            background-color: #491880;
+         }
+
+         .btn{ 
+
+            display: block;
+            padding: 14px 32px;
+            font-size: 16px;
+            color: #fff;
+            border-style: none;
+            cursor: pointer;
+         }
+
+         .btn:hover{
+            background-color: #8e6bb5;
+            transition: 0.2s;
+         }
+
+
+    </style>
+</head>
+
+<body>
+
+    <div id="popup">
+
+            
+            <img src="vrquin.png" alt="popup">
+                <div class="popup-btn">
+                <button id="close" class="btn btn-lg btn-primary">Close</button>
+                </div>
+
+        </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+    <script type='text/javascript'>
+        $(document).ready(function () {
+            //select the POPUP FRAME and show it
+            $("#popup").hide().fadeIn(1000);
+
+            //close the POPUP if the button with id="close" is clicked
+            $("#close").on("click", function (e) {
+                e.preventDefault();
+                $("#popup").fadeOut(1000);
+            });
+        });
+    </script>
+
+
+</body>
+
+
+</html>
