@@ -1,0 +1,32 @@
+#popup {
+    display: none;
+    position: absolute;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 50px 2px #000;
+}
+
+.popup-btn{
+    position: absolute;
+    top: -1%;
+    left: 98%;
+    -moz-transform: translate(-50%);
+    -webkit-transform: translatex(-50%);   
+    transform: translatex(-50%); 
+}
+
+.popup-btn i{ 
+    font-size: 32px;
+    
+    transition: 0.2s;
+}
+
+.popup-btn i:hover{
+    font-size: 36px;
+   
+    cursor: pointer;
+
+}
+ß
